@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <head>
+        <meta charset="utf-8">
+        <title>Law Firm</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="Law Firm Website Template" name="keywords">
+        <meta content="Law Firm Website Template" name="description">
+
+        <!-- Favicon -->
+        <link href="img/favicon.ico" rel="icon">
+
+        <!-- Google Font -->
+        <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@1,600;1,700;1,800&family=Roboto:wght@400;500&display=swap" rel="stylesheet"> 
+        
+        <!-- CSS Libraries -->
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+        <link href="lib/animate/animate.min.css" rel="stylesheet">
+        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet" >
+
+        <!-- Template Stylesheet -->
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-6 offset-md-3 border p-4 shadow bg-light">
+                <div class="col-12">
+                    <!-- <h3 class="fw-normal text-secondary fs-4 text-uppercase mb-4">Appointment form</h3> -->
+                    <h3 class="fw-normal fs-4 text-uppercase mb-4">Appointment form</h3>
+                </div>
+                <form action="https://formspree.io/f/mqkvwkla"   method="POST">
+                    <div class="row g-3">
+                        <div class="col-md-6">
+                            <input type="text" class="form-control" placeholder="First Name" required>
+                        </div>
+                        <div class="col-md-6">
+                            <input type="text" class="form-control" placeholder="Last Name" >
+                        </div>
+                        <div class="col-md-6">
+                            <input type="tel" class="form-control" placeholder="Phone Number" required pattern="[0-9]{10}">
+                            <small class="text-muted">Please enter a valid 10-digit phone number.</small>                       
+                         </div>
+                        <div class="col-md-6">
+                            <input type="email" class="form-control" placeholder="Enter Email" >
+                        </div>
+                        <div class="col-md-6">
+                            <input type="date" class="form-control" placeholder="Enter Date" >
+                        </div>
+                        <div class="col-md-6">
+                            <input type="time" class="form-control" placeholder="Enter Email" >
+                        </div>
+                        <div class="col-12">
+                            <select class="form-select">
+                                <option selected>Purpose Of Appointment</option>
+                                <option value="1">Civil Law</option>
+                                <option value="2">Family law</option>
+                                <option value="3">Business Law</option>
+                                <option value="4">Education Law</option>
+                                <option value="5">Criminal law</option>
+                                <option value="6">Cyber Law</option>
+                            </select>
+                        </div>
+                        <div class="col-12">
+                            <textarea class="form-control" placeholder="Message"></textarea>
+                        </div>
+                        <div class="col-12 mt-5">                        
+                            <button type="submit" value="Submit"  class="btn btn-primary float-end">Book Appointment</button>
+                            <!-- <button type="button" class="btn-close btn-outline-secondary float-end me-2" id="cancelButton">Close</button> -->
+                            <button type="button"  id="cancelButton" name="cancel" class="btn-close" aria-label="Close">Close</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script>
+        // JavaScript code to redirect to another page when the "Cancel" button is clicked
+        document.addEventListener("DOMContentLoaded", function () {
+            var cancelButton = document.getElementById("cancelButton");
+
+            if (cancelButton) {
+                cancelButton.addEventListener("click", function () {
+                    // Change the URL to the desired page
+                    window.location.href = "index.html";
+                });
+            }
+        });
+    </script>
+    
+</body>
+</html>
+
