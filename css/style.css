@@ -210,8 +210,16 @@ a:focus {
 .navbar-dark .navbar-nav .nav-link.active {
     color: #aa9166;
     transition: none;
+    
 }
-
+.nav-bar .navbar-brand,
+.nav-bar .navbar-brand:hover{
+    /* color: #aa9166; */
+    transition: none;
+    padding: 10px 10px 8px 10px;
+    color: #ffffff;
+    font-size: medium;
+}
 .nav-bar .dropdown-menu {
     margin-top: 0;
     border: 0;
